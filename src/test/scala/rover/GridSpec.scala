@@ -29,13 +29,14 @@ Rover will always try to turn 'left' first, then 'up', 'down' and, finally, 'rig
 
   markup {"""
 A Grid may have obstacles:
-            |-------|-------|-------|
-            | (0,0) | (0,1) | ##### |
-            |-------|-------|-------|
-            | (1,0) | (1,1) | ##### |
-            |-------|-------|-------|
-            | ##### | (2,1) | (2,2) |
-            |-------|-------|-------|
+
+|-------|-------|-------|
+| (0,0) | (0,1) | ##### |
+|-------|-------|-------|
+| (1,0) | (1,1) | ##### |
+|-------|-------|-------|
+| ##### | (2,1) | (2,2) |
+|-------|-------|-------|
   """ }
   it should "have no connections where there are obstacles" in {
     val aGridWithObstacles = Grid(rows = 3, columns = 3, obstacles = Some(List((2,0), (0,2), (1,2))))
@@ -47,7 +48,7 @@ A Grid may have obstacles:
     )
   }
 
-  "printPath" should "print the path from one node to the other" in {
+  "printPath" should "print the path from one node to another" in {
     printPath(List((0,0), (0,4), (2,4))) shouldBe "(0,0) -> (0,4) -> (2,4)"
     printPath(List.empty) shouldBe ""
   }
