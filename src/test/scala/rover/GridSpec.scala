@@ -3,7 +3,6 @@ package rover
 import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.matchers.should.Matchers
 import rover.Edges.printPath
-import rover.Path.shortestPath
 
 class GridSpec extends AnyFlatSpec with Matchers {
 
