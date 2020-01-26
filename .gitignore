@@ -1,0 +1,29 @@
+# S.O.
+.DS_Store
+
+# IDE
+.idea/
+.bloop/
+.metals/
+
+target/
+/.ensime
+/.ensime_cache/
+/release-version.txt
+/taskbot/taskbot-jira-secret.yaml
+/taskbot/taskbot-kafka-secret.yaml
+/taskbot/taskbot-mailgun-secret.yaml
+/taskbot/taskbot-jira-secret-prod.yaml
+/taskbot/taskbot-kafka-secret-prod.yaml
+/taskbot/taskbot-mailgun-secret-prod.yaml
+/server/stripe-secret-prod.yaml
+/server/stripe-secret.yaml
+/server/divido-secret-prod.yaml
+/server/divido-secret.yaml
+/server/slack-secret-prod.yaml
+/server/slack-secret.yaml
+/.ensime_snapshot/
+/taskbot/docraptor-secret-prod.yaml
+/taskbot/docraptor-secret.yaml
+/report-*.txt
+/*/src/main/resources/logback-test.xml
