@@ -7,6 +7,8 @@ object Edges {
     case None => edges
     case Some(obs) => edges.filterNot(obs.contains(_))
   }
+
+  def printPath(edges: Edges): String = edges.mkString(" -> ")
 }
 
 object Grid {
